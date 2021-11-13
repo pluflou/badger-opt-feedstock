@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
   run:
     - coolname
-    - numpy
+    - pandas
     - pillow
     - pyqt
     - pyqtgraph

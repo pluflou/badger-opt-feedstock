@@ -1,5 +1,5 @@
 {% set name = "badger-opt" %}
-{% set version = "0.4.5" %}
+{% set version = "0.5.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/badger-opt-{{ version }}.tar.gz
-  sha256: 73f28ec37726d55ade295c0a171c90868d537f1325ebfa17007d2d468f52ebff
+  sha256: 7663692f0a13c9451e9189d3b6c15fcd7a4370a6389ac12fb7a9c6c642c5aa70
 
 build:
   number: 0
@@ -23,7 +23,7 @@ requirements:
     - python >=3.6
   run:
     - coolname
-    - numpy
+    - pandas
     - pillow
     - pyqt
     - pyqtgraph

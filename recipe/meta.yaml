@@ -1,5 +1,5 @@
 {% set name = "badger-opt" %}
-{% set version = "0.8" %}
+{% set version = "0.8.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/badger-opt-{{ version }}.tar.gz
-  sha256: 57fa649a65c911ce44df404c9eea6151065575b947c444ca32d56ff94bb422af
+  sha256: d1cfcac84595f5572dda3571707727be3f30750fdbb384611932cec2e5f3f52b
 
 build:
   number: 0

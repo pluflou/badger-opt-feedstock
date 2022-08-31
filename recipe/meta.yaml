@@ -1,5 +1,5 @@
 {% set name = "badger-opt" %}
-{% set version = "0.8.2" %}
+{% set version = "0.9.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/badger-opt-{{ version }}.tar.gz
-  sha256: 6bcba7fcbc12aa175f81b1895552f4ffeb9f94cb9d701be4bf891065e6adf6dd
+  sha256: 6ed72ff984b4106e27b1cd0105aaf2de1595517e64da7e23c15cf96fbaf98448
 
 build:
   number: 0
@@ -30,6 +30,8 @@ requirements:
     - python >=3.6
     - pyyaml
     - qdarkstyle
+    - requests
+    - tqdm
 
 test:
   imports:

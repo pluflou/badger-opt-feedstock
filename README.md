@@ -1,11 +1,11 @@
-About badger-opt
-================
+About badger-opt-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/badger-opt-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/SLAC-ML/Badger
 
 Package license: GPL-3.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/badger-opt-feedstock/blob/main/LICENSE.txt)
 
 Summary: Core of the Badger optimizer
 

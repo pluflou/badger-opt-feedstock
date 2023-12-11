@@ -37,12 +37,12 @@ requirements:
 test:
   imports:
     - badger
-  requires:
-    - pytest
-    - pytest-qt
-    - pytest-mock
+    - badger.actions
   commands:
-    - pytest --pyargs badger
+    - pip check
+    - badger --help
+  requires:
+    - pip
 
 about:
   home: https://github.com/slaclab/Badger

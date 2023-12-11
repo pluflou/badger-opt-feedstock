@@ -20,32 +20,33 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.9
   run:
     - coolname
     - pandas
     - pillow
     - pyqt
     - pyqtgraph
-    - python >=3.6
+    - python >=3.9
     - pyyaml
     - qdarkstyle
     - requests
     - tqdm
+    - xopt
 
 test:
   imports:
     - badger
-    - badger.actions
-  commands:
-    - pip check
-    - badger --help
   requires:
-    - pip
+    - pytest
+    - pytest-qt
+    - pytest-mock
+  commands:
+    - pytest --pyargs badger
 
 about:
-  home: https://github.com/SLAC-ML/Badger
-  summary: Core of the Badger optimizer
+  home: https://github.com/slaclab/Badger
+  summary: Badger optimizer
   license: GPL-3.0
   license_file: LICENSE
 

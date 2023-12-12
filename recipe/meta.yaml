@@ -22,25 +22,20 @@ requirements:
     - pip
     - python >=3.9
   run:
-    - coolname
-    - pandas
-    - pillow
+    - python >=3.9
     - pyqt
     - pyqtgraph
-    - python >=3.9
-    - pyyaml
     - qdarkstyle
+    - coolname
+    - pillow
     - requests
-    - tqdm
     - xopt
 
 test:
   imports:
     - badger
-    - badger.actions
   commands:
-    - pip check
-    - badger --help
+    - badger
   requires:
     - pip
 

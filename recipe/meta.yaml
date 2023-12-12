@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/badger-opt-{{ version }}.tar.gz
-  sha256: 9e904ea613c0e2f69fb86afd243db1dee6d252f08b1705c32d1b3dbf6a2b6b6f
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/badger-opt-{{ version }}_1.tar.gz
+  sha256: e92457f4ff716ee36b5aea906fe5403b4f970f5cff744db72a3bee3f865aebe2
 
 build:
   number: 0

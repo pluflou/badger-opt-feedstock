@@ -1,5 +1,5 @@
 {% set name = "badger-opt" %}
-{% set version = "0.11" %}
+{% set version = "1.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/badger-opt-{{ version }}.tar.gz
-  sha256: 290280632bc59e8cd10c28d7cb32900c434134ae46da33e3e94c3ad1ccef2fcd
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/badger-opt-{{ version }}_1.tar.gz
+  sha256: e92457f4ff716ee36b5aea906fe5403b4f970f5cff744db72a3bee3f865aebe2
 
 build:
   number: 0
@@ -20,32 +20,28 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.9
   run:
-    - coolname
-    - pandas
-    - pillow
+    - python >=3.9
     - pyqt
     - pyqtgraph
-    - python >=3.6
-    - pyyaml
     - qdarkstyle
+    - coolname
+    - pillow
     - requests
-    - tqdm
+    - xopt
 
 test:
   imports:
     - badger
-    - badger.actions
   commands:
-    - pip check
-    - badger --help
+    - badger
   requires:
     - pip
 
 about:
-  home: https://github.com/SLAC-ML/Badger
-  summary: Core of the Badger optimizer
+  home: https://github.com/slaclab/Badger
+  summary: Badger optimizer
   license: GPL-3.0
   license_file: LICENSE
 

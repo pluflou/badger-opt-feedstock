@@ -3,11 +3,11 @@ About badger-opt-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/badger-opt-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/SLAC-ML/Badger
+Home: https://github.com/slaclab/Badger
 
 Package license: GPL-3.0
 
-Summary: Core of the Badger optimizer
+Summary: Badger optimizer
 
 Current build status
 ====================

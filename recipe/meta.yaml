@@ -11,7 +11,7 @@ source:
   sha256: 29fe02d2ea034e9c2db29552e4f26b5c5979be1170230287fc1514ecd56cceb0
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - badger = badger.__main__:main
@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.9
+    - setuptools
   run:
     - python >=3.9
     - pyqt
@@ -38,9 +39,17 @@ test:
     - badger
   requires:
     - pip
+    - pytest
+    - pytest-cov
+    - pytest-qt
+    - pytest-mock
+  source_files:
+    - src/badger/tests
+  commands:
+    - pytest src/badger/tests
 
 about:
-  home: https://github.com/slaclab/Badger
+  home: https://github.com/xopt-org/Badger
   summary: Badger optimizer
   license: GPL-3.0
   license_file: LICENSE

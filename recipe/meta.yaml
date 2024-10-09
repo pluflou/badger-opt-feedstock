@@ -39,14 +39,6 @@ test:
     - badger
   requires:
     - pip
-    - pytest
-    - pytest-cov
-    - pytest-qt
-    - pytest-mock
-  source_files:
-    - src/badger/tests
-  commands:
-    - pytest src/badger/tests
 
 about:
   home: https://github.com/xopt-org/Badger

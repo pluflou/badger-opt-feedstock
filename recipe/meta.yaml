@@ -1,5 +1,5 @@
 {% set name = "badger-opt" %}
-{% set version = "1.1.4" %}
+{% set version = "1.2.0" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 29fe02d2ea034e9c2db29552e4f26b5c5979be1170230287fc1514ecd56cceb0
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 199c47cd471ee661a84f35333cc25f5b89528e969e24dbfd2be5092164a95167
 
 build:
   number: 0
@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.9
+    - setuptools
   run:
     - python >=3.9
     - pyqt
@@ -35,12 +36,12 @@ test:
   imports:
     - badger
   commands:
-    - badger
+    - bash -c "mkdir -p /home/conda/.config && echo 'y' | badger"
   requires:
     - pip
 
 about:
-  home: https://github.com/slaclab/Badger
+  home: https://github.com/xopt-org/Badger
   summary: Badger optimizer
   license: GPL-3.0
   license_file: LICENSE
@@ -48,3 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - wenatuhs
+    - pluflou

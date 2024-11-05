@@ -7,7 +7,7 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 199c47cd471ee661a84f35333cc25f5b89528e969e24dbfd2be5092164a95167
 
 build:
@@ -21,6 +21,7 @@ requirements:
   host:
     - pip
     - python >=3.9
+    - setuptools
   run:
     - python >=3.9
     - pyqt
@@ -48,3 +49,4 @@ about:
 extra:
   recipe-maintainers:
     - wenatuhs
+    - pluflou

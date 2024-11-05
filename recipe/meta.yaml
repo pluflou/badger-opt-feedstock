@@ -36,7 +36,7 @@ test:
   imports:
     - badger
   commands:
-    - badger
+    - echo "y" | badger
   requires:
     - pip
 

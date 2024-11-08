@@ -11,7 +11,7 @@ source:
   sha256: 199c47cd471ee661a84f35333cc25f5b89528e969e24dbfd2be5092164a95167
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - badger = badger.__main__:main

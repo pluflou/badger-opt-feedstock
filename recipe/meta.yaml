@@ -11,7 +11,7 @@ source:
   sha256: 199c47cd471ee661a84f35333cc25f5b89528e969e24dbfd2be5092164a95167
 
 build:
-  number: 1
+  number: 2
   noarch: python
   entry_points:
     - badger = badger.__main__:main
@@ -20,11 +20,11 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.9
+    - python {{ python_min }}
     - setuptools
     - setuptools-scm
   run:
-    - python >=3.9
+    - python >={{ python_min }}
     - pyqt
     - pyqtgraph
     - qdarkstyle
@@ -40,6 +40,7 @@ test:
     - bash -c "mkdir -p /home/conda/.config && echo 'y' | badger"
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://github.com/xopt-org/Badger

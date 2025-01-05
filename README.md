@@ -3,7 +3,7 @@ About badger-opt-feedstock
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/badger-opt-feedstock/blob/main/LICENSE.txt)
 
-Home: https://github.com/slaclab/Badger
+Home: https://github.com/xopt-org/Badger
 
 Package license: GPL-3.0
 
@@ -143,5 +143,6 @@ In order to produce a uniquely identifiable distribution:
 Feedstock Maintainers
 =====================
 
+* [@pluflou](https://github.com/pluflou/)
 * [@wenatuhs](https://github.com/wenatuhs/)
 

@@ -1,5 +1,6 @@
 {% set name = "badger-opt" %}
 {% set version = "1.2.1" %}
+{% set python_min = "3.10" %}
 
 
 package:

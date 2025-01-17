@@ -1,5 +1,6 @@
 {% set name = "badger-opt" %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
+{% set python_min = "3.10" %}
 
 
 package:
@@ -8,10 +9,10 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 199c47cd471ee661a84f35333cc25f5b89528e969e24dbfd2be5092164a95167
+  sha256: 1471d3685c8c8eff53d167ec1c556f0c200bf42f372eac5c985bec058812e298
 
 build:
-  number: 2
+  number: 0
   noarch: python
   entry_points:
     - badger = badger.__main__:main

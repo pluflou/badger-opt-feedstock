@@ -38,7 +38,7 @@ test:
   imports:
     - badger
   commands:
-    - bash -c "mkdir -p /home/conda/.config && echo 'y' | badger"
+    - bash -c "mkdir -p /home/conda/.config && echo 'n' | badger"
   requires:
     - pip
     - python {{ python_min }}

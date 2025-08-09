@@ -1,5 +1,5 @@
 {% set name = "badger-opt" %}
-{% set version = "1.4.2" %}
+{% set version = "1.4.3" %}
 {% set python_min = "3.10" %}
 
 
@@ -9,7 +9,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 1daf5bad5c93060f78b2023dd264fd0026c1d34140b2025d9c886219973271d5
+  sha256: 3aefb73d6ddb0acd2f3e9d9b4e91d45a695aa10e46870a3214a8faff968423b5
 
 build:
   number: 0

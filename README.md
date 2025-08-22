@@ -144,5 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@pluflou](https://github.com/pluflou/)
+* [@roussel-ryan](https://github.com/roussel-ryan/)
 * [@wenatuhs](https://github.com/wenatuhs/)
 

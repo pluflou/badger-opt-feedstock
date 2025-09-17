@@ -12,7 +12,7 @@ source:
   sha256: 3aefb73d6ddb0acd2f3e9d9b4e91d45a695aa10e46870a3214a8faff968423b5
 
 build:
-  number: 0
+  number: 1
   noarch: python
   entry_points:
     - badger = badger.__main__:main
@@ -28,11 +28,11 @@ requirements:
     - python >={{ python_min }}
     - pyqt
     - pyqtgraph
-    - qdarkstyle
+    - qdarkstyle >=3.0
     - coolname
     - pillow
     - requests
-    - xopt >=2.6.3
+    - xopt >=2.6.5
 
 test:
   imports:
